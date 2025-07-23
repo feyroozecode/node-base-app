@@ -5,6 +5,8 @@ import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import config from './config';
 import Database from './config/database';
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './config/swagger';
 
 // Import routes
 import authRoutes from './routes/authRoutes';
@@ -72,6 +74,9 @@ class App {
         environment: config.nodeEnv,
       });
     });
+
+    // Swagger docs endpoint
+    this.app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
     // API routes
     this.app.use('/api/auth', authRoutes);
