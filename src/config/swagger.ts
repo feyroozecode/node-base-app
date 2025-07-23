@@ -13,9 +13,22 @@ const options = {
         url: 'http://localhost:3000/',
       },
     ],
-  },
-  apis: [
-    './src/routes/*.ts', // Path to your route files
+      components:{
+        securitySchemes:{
+          bearerAuth:{
+            type:'http',
+            scheme:'bearer',
+            bearerFormat:'JWT',
+          },
+        },
+      },
+    
+      security:[
+        {bearerAuth:[]}
+      ],
+      },
+    apis: [
+        './src/routes/*.ts', // Path to your route files
   ],
 };
 

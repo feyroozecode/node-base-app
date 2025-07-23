@@ -86,7 +86,7 @@ class App {
     this.app.get('/api', (req: Request, res: Response) => {
       res.status(200).json({
         success: true,
-        message: 'Node.js Boilerplate API',
+        message: 'API Documentation',
         version: '1.0.0',
         endpoints: {
           auth: {
