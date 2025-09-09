@@ -28,7 +28,7 @@ Un boilerplate moderne Node.js avec Express, MongoDB, authentification JWT et Ty
 
 1. **Cloner le projet**
    ```bash
-   git clone <votre-repo>
+   git clone [<votre-repo>](https://github.com/feyroozecode/node-base-app.git)
    cd nodejs-boilerplate
    ```
 
