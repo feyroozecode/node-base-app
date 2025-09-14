@@ -297,6 +297,4 @@ Pour étendre ce boilerplate, vous pourriez ajouter :
 
 ---
 
-**Créé avec ❤️ par Manus AI**
-
 # sms-pro-backend
